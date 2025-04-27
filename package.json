@@ -1,0 +1,39 @@
+{
+  "name": "telegrambot-googlecalendar-integration",
+  "version": "1.0.0",
+  "description": "Telegram Bot and Google Calendar Integration",
+  "main": "main.js",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "googleapis": "^105.0.0",
+    "moment": "^2.11.2",
+    "moment-timezone": "^0.5.46",
+    "mongodb": "^6.12.0",
+    "node-telegram-bot-api": "^0.63.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "start": "node main.js",
+    "precommit": "lint-staged"
+  },
+  "author": "Sandeep Marathe",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3"
+  }
+}
